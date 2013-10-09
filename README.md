@@ -1,7 +1,7 @@
 jQuery Configr Plugin
 =====================
 
-The jQuery Configr Plugin provides drop-in library for displaying Configr Ribbons at your website and spreading your referral code. :)
+The jQuery Configr Plugin provides drop-in library for displaying Configr Ribbons at your website and spreading your referral code.
 
 ## Getting Started
 
