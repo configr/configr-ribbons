@@ -1,5 +1,5 @@
-jQuery Configr Plugin - Configr Ribbons made easy
-=================================================
+jQuery Configr Plugin
+=====================
 
 The jQuery Configr Plugin provides drop-in library for displaying Configr Ribbons at your website and spreading your referral code. :)
 
@@ -13,7 +13,7 @@ Include jQuery and the plugin on a page, then call the `configr` method.
 <div id="ribbon"></div>
 <script>
 $('#ribbon').configr({
-  color: 'purple'       // valid options: purple (default), blue, green, black, white
+  color: 'purple' // valid options: purple (default), blue, green, black, white
 });
 </script>
 ```
