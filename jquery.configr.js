@@ -13,6 +13,7 @@
       // merge custom and default options
       options = $.extend({
         color: 'purple',
+        referral: ''
       }, options);
 
       // build ribbon image url
@@ -23,10 +24,10 @@
       $(this).html(
           '<div style="position:absolute;top:0;right:0;'
         + 'width:119px;height:119px;text-indent:-9999px;cursor:hand;'
-        + 'cursor:pointer;outline:0;border:none;">managed via configr'
+        + 'cursor:pointer;outline:0;border:none;"><a href="http://confi.gr/?referral='+options['referral']+'" title="managed via Configr">'
         + '<img src="' + ribbon + '" style="position:absolute;top:-1px;'
         + 'right:0px;width:119px;height:119px;text-indent:-9999px;'
-        + 'z-index:2;outline:0;border:none;"/></div>'
+        + 'z-index:2;outline:0;border:none;"/></a></div>'
       );
     });
   };
