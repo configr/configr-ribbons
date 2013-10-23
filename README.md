@@ -1,7 +1,7 @@
-jQuery Configr Plugin
-=====================
+Configr Ribbons
+---------------
 
-The jQuery Configr Plugin provides drop-in library for displaying Configr Ribbons at your website and spreading your referral code.
+The *Configr Ribbons* provides an easy way for spreading your referral code via beautiful and colorful ribbons.
 
 ## Getting Started
 
@@ -9,12 +9,13 @@ Include jQuery and the plugin on a page, then call the `configr` method.
 
 ```html
 <script src="jquery.js"></script>
-<script src="jquery.configr.js"></script>
-<div id="ribbon"></div>
+<script src="jquery.configr-ribbons.js"></script>
+<div id="configr"></div>
 <script>
-$('#ribbon').configr({
-  color: 'purple' // valid options: purple (default), blue, green, black, white
-});
+  $('#configr').configr({
+    color: 'purple' // valid options: purple (default), blue, green, black, white
+    referral: '<YOUR-REFERRAL-CODE>',
+  });
 </script>
 ```
 
