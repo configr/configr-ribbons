@@ -10,7 +10,7 @@ Include jQuery and the plugin on a page, then call the `configr` method.
 
 ```html
 <script src="jquery.js"></script>
-<script src="jquery.configr-ribbons.js"></script>
+<script src="jquery.configr-ribbons.min.js"></script>
 <div id="configr"></div>
 <script>
   $('#configr').configr({
