@@ -21,15 +21,20 @@
       var media_url = 'http://media.confi.gr/ribbon/';
       var ribbon = media_url + options['color'] + '.png';
 
+      // build referral url
+      var referral = 'http://confi.gr'
+      if (options['referral'])
+        referral += '?r=' + options['referral']
+
       // include html content
       $(this).html(
           '<div style="position:absolute;top:0;right:0;'
         + 'width:119px;height:119px;text-indent:-9999px;cursor:hand;'
-        + 'cursor:pointer;outline:0;border:none;"><a href="http://confi.gr/?r='
-        + options['referral'] + '" title="Managed via Configr">'
-        + '<img src="' + ribbon + '" style="position:absolute;top:-1px;'
-        + 'right:0px;width:119px;height:119px;text-indent:-9999px;'
-        + 'z-index:2;outline:0;border:none;"/></a></div>'
+        + 'cursor:pointer;outline:0;border:none;"><a href="' + referral
+        + '" title="Managed via Configr"><img src="' + ribbon + '" '
+        + 'style="position:absolute;top:-1px;right:0px;width:119px;'
+        + 'height:119px;text-indent:-9999px;z-index:2;outline:0;'
+        + 'border:none;"/></a></div>'
       );
     });
   };
