@@ -8,9 +8,23 @@
 (function($) {
   "use strict";
 
+  var _configr_param = function(param, value) {
+    $('script').each(function() {
+      var http_pieces = this.src.split('?');
+      var path_pieces = http_pieces[0].split('/');
+      var path_script = path_pieces[path_pieces.length-1];
+      if (path_script.match(/^configr-ribbon(\.min)?\.js$/)) {
+        var param_value = RegExp('' + param + '[^&]+').exec(this.src);
+        var param_value = unescape(!!param_value ? param_value.toString().replace(/^[^=]+./, '') : '');
+        value = param_value || value;
+      }
+    });
+    return value;
+  }
+
   // default settings
-  var template = 'purple';
-  var referral = '';
+  var template = _configr_param('t', 'purple');
+  var referral = _configr_param('r', '');
 
   // build assets url
   var ribbon = 'http://media.confi.gr/ribbon/' + template + '.png';

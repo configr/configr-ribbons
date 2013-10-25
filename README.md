@@ -10,10 +10,10 @@ Include jQuery and the plugin on a page, then call the `configr` method.
 
 ```html
 <script src="jquery.min.js"></script>
-<script src="//media.confi.gr/ribbon/configr-ribbon.min.js" async></script>
+<script src="//media.confi.gr/ribbon/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
 ```
 
-## Available Ribbon Colors
+## Available Ribbon Templates
 
 ![Purple](http://media.confi.gr/ribbon/purple.png)
 ![Blue](http://media.confi.gr/ribbon/blue.png)
