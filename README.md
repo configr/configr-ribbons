@@ -1,19 +1,21 @@
 Configr Ribbons
 ===============
 
-The **Configr Ribbons** provides an easy way for spreading your referral code via beautiful and colorful ribbons.
+The **Configr Ribbons** is a drop-in library which provides an easy way for spreading your referral code via beautiful and colorful ribbons.
 
 
 ## Getting Started
 
-Include jQuery and the plugin on a page, then call the `configr` method.
+Include jQuery, the Configr Ribbon plugin and that's all:
 
 ```html
-<script src="jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="//media.confi.gr/ribbon/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
 ```
 
-## Available Ribbon Templates
+## Available Templates
+
+ Options: `purple`, `blue`, `green`, `grey`
 
 ![Purple](http://media.confi.gr/ribbon/purple.png)
 ![Blue](http://media.confi.gr/ribbon/blue.png)
