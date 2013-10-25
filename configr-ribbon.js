@@ -32,12 +32,11 @@
 
   // include html content
   $('body').prepend(
-      '<div id="configr-ribbon" style="position:absolute;top:0;'
-    + 'right:0;width:119px;height:119px;text-indent:-9999px;'
-    + 'cursor:hand;cursor:pointer;outline:0;border:none;"><a '
-    + 'href="' + target + '" title="Managed via Configr"><img '
-    + 'src="' + ribbon + '" style="position:absolute;top:-1px;'
-    + 'right:0px;width:119px;height:119px;text-indent:-9999px;'
-    + 'z-index:2;outline:0;border:none;"/></a></div>'
+      '<div id="configr-ribbon" style="position:absolute;top:0;right:0;'
+    + 'background:transparent;width:119px;height:119px;text-indent:-9999px;'
+    + 'cursor:hand;cursor:pointer;outline:0;border:none;"><a href="' + target
+    + '" title="Managed via Configr"><img src="' + ribbon + '" '
+    + 'style="position:absolute;top:-1px;right:0px;width:119px;height:119px;'
+    + 'text-indent:-9999px;z-index:2;outline:0;border:none;"/></a></div>'
   );
 })(jQuery);
