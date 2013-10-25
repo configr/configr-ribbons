@@ -1,5 +1,5 @@
 /*!
- * jQuery Configr Ribbons Plugin v0.1
+ * jQuery Configr Ribbons Plugin 1.0
  * https://github.com/configr/configr-ribbons
  *
  * Copyright 2013 Arthur Furlan <afurlan@confi.gr>
@@ -8,6 +8,7 @@
 (function($) {
   "use strict";
 
+  // extract querystring data
   var _parse_querystring = function(querystring) {
     var params = {}, pieces, temp, i, l;
     pieces = querystring.split('&');
@@ -18,6 +19,7 @@
     return params;
   }
 
+  // extract querystring param from configr script
   var _configr_param = function(param, value) {
     $('script').each(function() {
       var http_pieces = this.src.split('?');

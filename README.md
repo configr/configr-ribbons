@@ -10,7 +10,7 @@ Include jQuery, the Configr Ribbon plugin and that's all:
 
 ```html
 <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="//media.confi.gr/ribbon/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
+<script src="//media.confi.gr/ribbon/1.0/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
 ```
 
 ## Available Templates
