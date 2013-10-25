@@ -8,15 +8,24 @@
 (function($) {
   "use strict";
 
+  var _parse_querystring = function(querystring) {
+    var params = {}, pieces, temp, i, l;
+    pieces = querystring.split('&');
+    for (i=0,l=pieces.length;i<l;i++) {
+      temp = pieces[i].split('=');
+      params[temp[0]] = temp[1];
+    }
+    return params;
+  }
+
   var _configr_param = function(param, value) {
     $('script').each(function() {
       var http_pieces = this.src.split('?');
       var path_pieces = http_pieces[0].split('/');
       var path_script = path_pieces[path_pieces.length-1];
-      if (path_script.match(/^configr-ribbon(\.min)?\.js$/)) {
-        var param_value = RegExp('' + param + '[^&]+').exec(this.src);
-        var param_value = unescape(!!param_value ? param_value.toString().replace(/^[^=]+./, '') : '');
-        value = param_value || value;
+      if (path_script.match(/^configr-ribbon(\.min)?\.js$/) && http_pieces.length > 1) {
+        var querystring = _parse_querystring(http_pieces[1]);
+        value = querystring[param] || value;
       }
     });
     return value;
