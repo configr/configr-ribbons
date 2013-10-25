@@ -9,15 +9,8 @@ The **Configr Ribbons** provides an easy way for spreading your referral code vi
 Include jQuery and the plugin on a page, then call the `configr` method.
 
 ```html
-<script src="jquery.js"></script>
-<script src="jquery.configr-ribbons.js"></script>
-<div id="configr"></div>
-<script>
-  $('#configr').configr({
-    color: 'purple' // valid options: purple (default), blue, green, grey
-    referral: '<YOUR-REFERRAL-CODE>',
-  });
-</script>
+<script src="jquery.min.js"></script>
+<script src="//media.confi.gr/ribbon/configr-ribbon.min.js" async></script>
 ```
 
 ## Available Ribbon Colors

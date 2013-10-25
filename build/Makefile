@@ -1,5 +1,5 @@
 build:
-	java -jar yuicompressor-2.4.8.jar ../jquery.configr-ribbons.js > ../jquery.configr-ribbons.min.js
+	java -jar yuicompressor-2.4.8.jar ../configr-ribbon.js > ../configr-ribbon.min.js
 
 clean:
-	rm -f ../jquery.configr-ribbons.min.js
+	rm -f ../configr-ribbon.min.js
