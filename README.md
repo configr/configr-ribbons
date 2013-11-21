@@ -10,17 +10,17 @@ Include jQuery, the Configr Ribbon plugin and that's all:
 
 ```html
 <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="//media.confi.gr/ribbon/1.0/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
+<script src="//media.configr.com/ribbon/1.0/configr-ribbon.min.js?t=<TEMPLATE>&r=<REFERRAL>" async></script>
 ```
 
 ## Available Templates
 
  Options: `purple`, `blue`, `green`, `grey`
 
-![Purple](http://media.confi.gr/ribbon/purple.png)
-![Blue](http://media.confi.gr/ribbon/blue.png)
-![Green](http://media.confi.gr/ribbon/green.png)
-![Grey](http://media.confi.gr/ribbon/grey.png)
+![Purple](http://media.configr.com/ribbon/purple.png)
+![Blue](http://media.configr.com/ribbon/blue.png)
+![Green](http://media.configr.com/ribbon/green.png)
+![Grey](http://media.configr.com/ribbon/grey.png)
 
 
 ## Reporting an Issue

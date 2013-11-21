@@ -2,7 +2,7 @@
  * jQuery Configr Ribbons Plugin 1.0
  * https://github.com/configr/configr-ribbons
  *
- * Copyright 2013 Arthur Furlan <afurlan@confi.gr>
+ * Copyright 2013 Arthur Furlan <afurlan@configr.com>
  * Copyright 2013 Amilton Paglia <amilton@matilhaestud.io>
  */
 (function($) {
@@ -38,8 +38,8 @@
   var referral = _configr_param('r', '');
 
   // build assets url
-  var ribbon = 'http://media.confi.gr/ribbon/' + template + '.png';
-  var target = 'http://confi.gr/?r=' + referral
+  var ribbon = 'http://media.configr.com/ribbon/' + template + '.png';
+  var target = 'http://configr.com/?r=' + referral
 
   // include html content
   $('body').prepend(
